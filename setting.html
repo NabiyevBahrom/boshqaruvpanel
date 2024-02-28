@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Boshqaruv paneli</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #4d6d9a;
+    }
+    .navbar-brand {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #f8f9fa;
+    }
+    .sidebar {
+      height: 100vh;
+      background-color: #35424a;
+      color: #ffffff;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      color: #ffffff;
+    }
+    .sidebar a:hover {
+      color: #f8f9fa;
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html"><i class="fas fa-home"></i> Boshqaruv paneli</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./user.html"><i class="fas fa-users"></i> Foydalanuvchilar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./setting.html">
+            <i class="fas fa-cogs"></i> Sozlamalar
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Content -->
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-2 d-none d-md-block sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">
+              <i class="fas fa-chart-bar"></i> Boshqaruv paneli
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./user.html">
+              <i class="fas fa-users"></i> Foydalanuvchilar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./setting.html">
+              <i class="fas fa-cogs"></i> Sozlamalar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="content">
+        <h2>Sozlamalar</h2>
+        <!-- Sozlamalar Form Section -->
+        <form>
+          <div class="mb-3">
+            <label for="siteName" class="form-label">Sayt nomi</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Enter your site name">
+          </div>
+          <div class="mb-3">
+            <label for="timezone" class="form-label">Vaqt zonasi</label>
+            <select class="form-select" id="timezone">
+              <option selected>Vaqt mintaqasini tanlang</option>
+              <option value="1">GMT</option>
+              <option value="2">UTC</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="notification" class="form-label">Bildirishnoma sozlamalari</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="notification">
+              <label class="form-check-label" for="notification">
+                Bildirishnomalarni qabul qilish
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sozlamalar Saqlash</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Bootstrap JS (optional, for some components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
